@@ -1,0 +1,49 @@
+body{
+    background-color: green;
+    color: white;
+}
+h1{
+    background-color: blueviolet;
+    widows: 100%;
+    text-align: center;
+    font-weight:bolder;
+    font-size:36px;
+    color:goldenrod;
+}
+.row{
+    position:absolute;
+    background-color: lightgreen;
+    height:960px;
+    width:700px;
+    left:450px;
+}
+
+.col-md-6{
+    float:left;
+    /* position: ; */
+    height:100%;
+    width:50%;
+}
+.picture-box{
+    background-color: blue;
+    height:700px;
+    width:350px;
+    /* padding: 10px; */
+    border: dotted 1px black;
+    
+}
+.word-box{
+    background-color: red;
+    height:350px;
+    width:350px;
+    /* padding: 10px; */
+    border: dotted 1px black;
+}
+.game-box{
+    background-color: yellow;
+    color:black;
+    height:350px;
+    width:350px;
+    /* padding: 10px; */
+    border: dotted 1px black;
+}
