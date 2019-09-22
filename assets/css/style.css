@@ -3,19 +3,28 @@ body{
     color: white;
 }
 h1{
+    position: static;
     background-color: blueviolet;
-    widows: 100%;
+    height:100px;
+    width: 100%;
+    padding-top:50px;
     text-align: center;
     font-weight:bolder;
     font-size:36px;
     color:goldenrod;
+    
+}
+h3{
+    font-size:20px;
+    font-weight: bolder;
+
 }
 .row{
     position:absolute;
     background-color: lightgreen;
     height:960px;
     width:700px;
-    left:450px;
+    left:425px;
 }
 
 .col-md-6{
@@ -30,14 +39,40 @@ h1{
     width:350px;
     /* padding: 10px; */
     border: dotted 1px black;
+    text-align:center;
     
 }
 .word-box{
+    position: static;
     background-color: red;
     height:350px;
     width:350px;
     /* padding: 10px; */
     border: dotted 1px black;
+    text-align: center;
+}
+.wins {
+    position: relative;
+    text-align:center;
+    background-color: pink;
+    height: 100px;
+    width:250px;
+    top:30px;
+    left: 60px;
+    font-size:18px;
+    font-weight:bolder;
+}
+.word {
+    position: relative;
+    text-align:center;
+    background-color: orange;
+    height: 150px;
+    width:250px;
+    margin-top: 20px;
+    top:30px;
+    left: 60px;
+    font-size:18px;
+    font-weight:bolder;
 }
 .game-box{
     background-color: yellow;
@@ -46,4 +81,29 @@ h1{
     width:350px;
     /* padding: 10px; */
     border: dotted 1px black;
+    text-align:center;
+}
+.guess{
+position: relative;
+text-align:center;
+background-color: pink;
+height: 100px;
+width:250px;
+margin-top: 20px;
+top:30px;
+left: 60px;
+font-size:18px;
+font-weight:bolder;
+}
+.letters{
+position: relative;
+text-align:center;
+background-color: orange;
+height: 150px;
+width:250px;
+margin-top: 20px;
+top:30px;
+left: 60px;
+font-size:18px;
+font-weight:bolder;
 }
