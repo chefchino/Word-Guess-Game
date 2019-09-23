@@ -15,6 +15,7 @@ h1{
     
 }
 h3{
+    margin-top: 10px;
     font-size:20px;
     font-weight: bolder;
 
@@ -73,6 +74,17 @@ h3{
     left: 60px;
     font-size:18px;
     font-weight:bolder;
+}
+#wordsG {
+    background-color: blue;
+    width: 240px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 3px;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
 }
 .game-box{
     background-color: yellow;
