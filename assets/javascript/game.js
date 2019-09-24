@@ -28,7 +28,8 @@ function startGame(){
 
 document.addEventListener("keypress", (event) => {
     let keyword = String.fromCharCode(event.keyCode);
-
+    changes = 0;
+        
     // for (var j = 0; j< keyword.length; j++) {
     //     if (choosen[j] === keyword){
     //         rightArray[j] = keyword;
@@ -39,8 +40,18 @@ document.addEventListener("keypress", (event) => {
         rightArray.push(keyword);
         console.log(rightArray);
     }
-    else { wrongArray.push(keyword);}
+    else { wrongArray.push(keyword);
+    }
         console.log(wrongArray);
+        if(changes < 1){
+            guessLeft -=1;
+            document.getElementById("guess1").innerHTML = guessLeft;
+        }
+
+    document.getElementById("wordsG").innerHTML = rightArray;
+
+    
+    document.getElementById("lettersGuess").innerHTML = wrongArray;
     });
 
 
