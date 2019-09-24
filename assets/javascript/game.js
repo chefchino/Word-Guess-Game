@@ -14,7 +14,7 @@ let blank;
 
 function startGame(){
     choosen = word[Math.floor(Math.random() * word.length)];
-
+        console.log(choosen);
     for (i = 0; i < choosen.length; i++) 
     {
         underScore[i] = " _ ";      
@@ -24,6 +24,18 @@ function startGame(){
     document.getElementById("wordsG").innerHTML = underScore; underScore.join("");
   
 }
+
+document.addEventListener("keypress", (event) => {
+    let keyword = String.fromCharCode(event.keyCode);
+
+    if(choosen.indexOf(keyword) > -1) {
+        rightArray.push(keyword);
+        console.log(rightArray);
+    }
+    else { wrongArray.push(keyword);}
+        console.log(wrongArray);
+    });
+
 
 startGame();
 
