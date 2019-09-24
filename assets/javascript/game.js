@@ -17,17 +17,12 @@ function startGame(){
 
     for (i = 0; i < choosen.length; i++) 
     {
-        underScore.push(" _ ");    
-       
+        underScore[i] = " _ ";      
     }
     console.log(underScore);
     
-
-    document.getElementByClassName(".words") = underScore;
-    
-    
-//   console.log($("#wordsG"));
-
+    document.getElementById("wordsG").innerHTML = underScore; underScore.join("");
+  
 }
 
 startGame();
