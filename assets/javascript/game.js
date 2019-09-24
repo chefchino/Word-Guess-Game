@@ -1,23 +1,32 @@
 
+
+
 // create an array of words 
 const word = ["nirvana", "nwa", "tupac", "korn", "deftones", "moby",];
 // create underscores to hold place of words until guess\
 var wins = 0;
 var guessLeft = 12;
-let randNum;
+let choosen;
 let underScore = [];
 let rightArray = [];
 let wrongArray = [];
+let blank;
 
 function startGame(){
-    randNum = word[Math.floor(Math.random() * word.length)];
+    choosen = word[Math.floor(Math.random() * word.length)];
 
-    for (i = 0; i < randNum.length; i++) 
+    for (i = 0; i < choosen.length; i++) 
     {
-        underScore.push(" _ ");       
+        underScore.push(" _ ");    
+       
     }
     console.log(underScore);
-    document.getElementById("wordsG").textContent = underScore;
+    
+
+    document.getElementByClassName(".words") = underScore;
+    
+    
+//   console.log($("#wordsG"));
 
 }
 
