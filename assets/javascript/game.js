@@ -19,6 +19,7 @@ function startGame(){
     {
         underScore[i] = " _ ";      
     }
+    let remainingLetters = choosen.length;
     console.log(underScore);
     
     document.getElementById("wordsG").innerHTML = underScore; underScore.join("");
@@ -28,6 +29,12 @@ function startGame(){
 document.addEventListener("keypress", (event) => {
     let keyword = String.fromCharCode(event.keyCode);
 
+    // for (var j = 0; j< keyword.length; j++) {
+    //     if (choosen[j] === keyword){
+    //         rightArray[j] = keyword;
+            
+    //     }
+    // }
     if(choosen.indexOf(keyword) > -1) {
         rightArray.push(keyword);
         console.log(rightArray);
