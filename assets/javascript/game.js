@@ -11,6 +11,7 @@ let underScore = [];
 let rightArray = [];
 let wrongArray = [];
 let blank;
+let correct =[];
 
 function startGame(){
     choosen = word[Math.floor(Math.random() * word.length)];
@@ -30,25 +31,30 @@ document.addEventListener("keypress", (event) => {
     let keyword = String.fromCharCode(event.keyCode);
     changes = 0;
         
-    // for (var j = 0; j< keyword.length; j++) {
+    // for ( j = 0; j< choosen.length; j++) {
     //     if (choosen[j] === keyword){
     //         rightArray[j] = keyword;
-            
-    //     }
+            // rightArray[j];
+        // }
+        // console.log(rightArray[j]);
     // }
     if(choosen.indexOf(keyword) > -1) {
-        rightArray.push(keyword);
+        rightArray.push(keyword); 
         console.log(rightArray);
     }
     else { wrongArray.push(keyword);
-    }
-        console.log(wrongArray);
         if(changes < 1){
             guessLeft -=1;
             document.getElementById("guess1").innerHTML = guessLeft;
         }
 
-    document.getElementById("wordsG").innerHTML = rightArray;
+    }
+    if (guessLeft === 0) {
+        alert("You Lose!!!!");
+    }
+        console.log(wrongArray);
+     
+    document.getElementById("wordsG").innerHTML = rightArray; rightArray.join("");
 
     
     document.getElementById("lettersGuess").innerHTML = wrongArray;
