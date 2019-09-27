@@ -13,6 +13,18 @@ let wrongArray = [];
 let blank;
 let correct ="";
 
+function reset(){
+    choosen = word[Math.floor(Math.random() * word.length)];
+    guessLeft = 12;
+    underScore = [];
+    rightArray = [];
+    wrongArray = [];
+    $("lettersGuess").empty;
+    startGame();
+    console.log("choosen1", choosen);
+
+}
+
 function startGame(){
     choosen = word[Math.floor(Math.random() * word.length)];
         console.log(choosen);
@@ -41,6 +53,10 @@ document.addEventListener("keypress", (event) => {
             underScore[j] = keyword;
             console.log("underscore", underScore);
         }
+        // if (choosen.includes(underScore)) {
+            
+        // }
+      
         // } else {
         //     guessLeft--; 
         //     wrongArray.push(keyword);
@@ -55,6 +71,29 @@ document.addEventListener("keypress", (event) => {
             console.log("wrongArray", wrongArray);
             console.log("guessed", guessLeft);
         }
+        document.getElementById("lettersGuess").innerHTML = wrongArray;
+        document.getElementById("guess1").innerHTML = guessLeft;
+
+        word1 = rightArray.join(" ");
+        word2 = underScore.join(" ");
+
+        if (word1 === word2) {
+            wins++;
+            alert("GOT IT!!");
+            // reset();
+            console.log("reset", reset());
+            document.getElementById("wins1").innerHTML = wins;
+            
+        }
+        if (guessLeft === 0){
+            alert("YOU GOTTA MISS!!!!")
+            reset();
+        }
+        
+    });
+
+
+    startGame();
         // if (choosen[j] === keyword){
         //     console.log(j);
         //     underScore[j] = keyword;
@@ -95,7 +134,4 @@ document.addEventListener("keypress", (event) => {
 
     
     // document.getElementById("lettersGuess").innerHTML = wrongArray;
-    });
 
-
-startGame();

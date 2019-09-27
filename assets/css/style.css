@@ -1,17 +1,17 @@
 body{
-    background-color: green;
+    background-color: black;
     color: white;
 }
 h1{
     position: static;
-    background-color: blueviolet;
+    background-color: goldenrod;
     height:100px;
     width: 100%;
     padding-top:50px;
     text-align: center;
     font-weight:bolder;
-    font-size:36px;
-    color:goldenrod;
+    font-size:100px;
+    color:black;
     
 }
 h3{
@@ -22,7 +22,7 @@ h3{
 }
 .row{
     position:absolute;
-    background-color: lightgreen;
+    background-color: black;
     height:960px;
     width:700px;
     left:425px;
@@ -35,27 +35,28 @@ h3{
     width:50%;
 }
 .picture-box{
-    background-color: blue;
+    background-color: black;
     height:700px;
     width:350px;
     /* padding: 10px; */
-    border: dotted 1px black;
+    border: dotted 8px white;
     text-align:center;
     
 }
 .word-box{
     position: static;
-    background-color: red;
+    background-color: black;
     height:350px;
     width:350px;
     /* padding: 10px; */
-    border: dotted 1px black;
+    border: dotted 8px white;
     text-align: center;
 }
 .wins {
     position: relative;
     text-align:center;
-    background-color: pink;
+    color: white;
+    background-color: black;
     height: 100px;
     width:250px;
     top:30px;
@@ -66,7 +67,7 @@ h3{
 .word {
     position: relative;
     text-align:center;
-    background-color: orange;
+    background-color: black;
     height: 140px;
     width:250px;
     margin-top: 20px;
@@ -74,9 +75,10 @@ h3{
     left: 60px;
     font-size:18px;
     font-weight:bolder;
+    color: white;
 }
 #wordsG {
-    background-color: blue;
+    background-color: black;
     width: 240px;
     height: 70px;
     margin-top: 10px;
@@ -85,21 +87,24 @@ h3{
     padding-left: 5px;
     text-align: center;
     font-weight: bolder;
-    color: black;
+    color: white;
 }
 .game-box{
-    background-color: yellow;
+    background-color: black;
     color:black;
-    height:350px;
+    height:343px;
     width:350px;
     /* padding: 10px; */
-    border: dotted 1px black;
+    border-bottom: dotted 8px white;
+    border-right: dotted 8px white; 
+    border-left: dotted 8px white;
     text-align:center;
 }
 .guess{
 position: relative;
 text-align:center;
-background-color: pink;
+background-color: black;
+color: white;
 height: 100px;
 width:250px;
 margin-top: 20px;
@@ -111,7 +116,8 @@ font-weight:bolder;
 .letters{
 position: relative;
 text-align:center;
-background-color: orange;
+background-color: black;
+color: white;
 height: 150px;
 width:250px;
 margin-top: 20px;
